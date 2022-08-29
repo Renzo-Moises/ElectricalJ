@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head info-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Handyman services">
+  <meta name="keywords" content="Handyman services, Electrician services, Electrician, Handyman, Handy man, Handy-man, cheap electrician, cheap handyman, repairs, HTML,CSS,JavaScript">
+    <meta name="author" content="Renzo Moises">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Electrical J. Ltd | Homepage</title>
+<!--    Linking to JavaScript file-->
+    <script src="scripts.js"></script>    
+<!--    linking to css file-->
+<link rel = "stylesheet" type = "text/css" href = "styles.css"> 
+    
+<script src="https://kit.fontawesome.com/7f9bcba9f8.js" crossorigin="anonymous"></script>
+    
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
+    
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+</head>
+
+<body>
+  
+    
+    <div class='wrapper'>
+<!--        Header-->
+        <div id="header">
+            <nav>
+                <a href="#default" class="logo">Electrical J</a>
+ 
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" id="hideMenu" onclick="HideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html"\>Home</a></li>
+                            <li><a href="about.html"\>About</a></li>
+                            <li><a href="Services.html"\>Services</a></li>
+                            <li><a href="contact.html"\>Contact</a></li>
+                        </ul>
+
+                </div>
+                <i class="fa fa-bars" id="showMenu" onclick="ShowMenu()"></i>
+           </nav> 
+
+        </div>
+        
+        <div id = "Intro">
+            
+                <div class = "Intro-slogan" style="    background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url('images/electrician-working.jpg');">
+                    
+                <h3 class="slogan">Who are we?</h3>
+                </div>
+        </div>        
+        
+
+        <!--        body-->
+        
+        <div class="content-body">
+            
+        <div style = "margin-bottom: 5%;">
+            <h2 class = "pageSubheadings" style="background-color: gainsboro; padding: 10px;">
+                About us
+            </h2>
+            <p class = "Paragraph" style="text-align: center; width: 80%; margin-left: 10%; margin-right: 10%;">
+            We are a group of proffesionals with the required skills and knowledge to provide electrical and handy-man services. We are a famuly business, new and ambitious.
+            <br>We operate all over London.
+            <br>We also provide 24/7 service. *Price to be adjusted*
+            </p>
+        </div>
+            
+    <!--    Second heading and text-->  
+        <div style = "margin-bottom: 5%;">
+            <h2 class = "pageSubheadings" style="background-color: gainsboro; padding: 10px;">Our Purpose?</h2>
+            <p class = "Paragraph" style="text-align: center; width: 80%; margin-left: 10%; margin-right: 10%;">
+                Our purpose is help everyone who do not have the skills needed or do not have time to carry out electrical repairs installations and handy-man jobs.
+            </p>
+        </div>    
+
+    <!--    Third heading and text-->  
+        <div>    
+            <h2 class = "pageSubheadings" style="background-color: gainsboro; padding: 10px;">No copyright intended</h2>
+            <p class = "Paragraph" style="text-align: center; width: 80%; margin-left: 10%; margin-right: 10%;">
+                All images used were taken exclusively by us.
+            </p>
+        </div>
+
+        </div>
+       
+        
+        <!--        Fotter-->
+        <footer>
+            <div id ="footer">
+                <nav role="sub"> 
+                    <div class="nav-links-fotter" id="navLinks-fotter">
+                        <ul>
+<!--                            <li><a href="index.html"\>Home</a></li>-->
+                            <li><a href="about.html"\>About</a></li>
+                            <li><a href="Services.html"\>Services</a></li>
+                            <li><a href="contact.html"\>Contact</a></li>
+                            <div class="Call-us"><a id="button-call" href="tel:+447867861533"><i id="telephone" class='fa fa-phone' style='color: white;'></i> Call us</a></div>
+                            
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="foot">Copyright 2022 | Electrical Jeff | Website Developed by Renzo Moises Piguave</div> 
+        </footer>   
+
+        <script>   
+            var navLinks = document.getElementById("navLinks");
+
+            function ShowMenu(){
+                navLinks.style.right = "0";
+        //        navLinks.style.display = "block";
+        //        navLinks.style.visibility = "visible";
+
+        //        navLinks.style.right = "0";
+            }
+            function HideMenu(){
+        //        navLinks.style.visibility = "hidden";
+                navLinks.style.right = "-200px";
+            }
+
+
+            window.onclick = function(event) {
+                if (!event.target.matches('#showMenu') && !event.target.matches('.nav-links')) {
+                    HideMenu();
+        //                console.log("Clicked outside")
+                    }
+            }
+
+        </script> 
+        
+    </div>
+    
+</body>    
+</html>     
